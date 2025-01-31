@@ -73,7 +73,9 @@ const Navber = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+      <button className=" border-2  hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
+             Contact us
+                </button>
       </div>
     </div>
    </div>

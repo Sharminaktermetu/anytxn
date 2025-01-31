@@ -1,0 +1,56 @@
+.sliderContainer {
+    position: relative;
+    padding-top: 60px; 
+    
+  }
+  
+  /* Custom Pagination Tabs */
+  .customTabs {
+    position: absolute;
+
+  width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+   
+    z-index: 10;
+  }
+  
+  /* Tab Button Design */
+  .tabButton {
+    
+    font-weight: bold;
+    font-size: 18px;
+    padding: 14px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    color: #1F80F0;
+    border: 2px solid transparent;
+  }
+  
+  .tabButton:hover {
+    background-color: rgba(0, 112, 243, 0.3);
+  }
+  
+  /* Active Tab */
+  .tabButton.active {
+    background-color: #0070f3;
+    color: white;
+    border-color: #0070f3;
+  }
+  
+  .tabButton {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .activeTab {
+    background-color: #B9D9FF; /* Active tab background */
+    color: #1F80F0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

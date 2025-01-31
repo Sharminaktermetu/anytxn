@@ -4,13 +4,13 @@ import lady from "@/assets/backgrounds/lady.avif";
 const Banner = () => {
   return (
     <div>
-      <section className="relative h-[85vh] overflow-hidden bg-white">
+      <section className="relative h-[87vh] overflow-hidden bg-white">
         {/* Background with diagonal split */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#0066FF] to-[#0057c1]">
           <div
             className="absolute inset-0"
             style={{
-              clipPath: "polygon(75% 0, 100% 0, 100% 100%, 45% 100%)",
+              clipPath: "polygon(80% 0, 100% 0, 100% 100%, 35% 100%)",
               backgroundImage: `url(${lady.src})`,
             }}
           />
@@ -38,7 +38,7 @@ const Banner = () => {
         <div
           className="absolute bottom-[-1px] left-0 w-full h-[150px] bg-white"
           style={{
-            clipPath: "polygon(0 80%, 100% 0%, 100% 100%, 0% 100%)",
+            clipPath: "polygon(0 100%, 100% 0%, 100% 100%, 0% 100%)",
           }}
         />
       </section>
