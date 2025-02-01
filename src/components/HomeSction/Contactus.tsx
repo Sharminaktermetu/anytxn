@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import star2 from "@/assets/backgrounds/WaveLinesDesktop4.svg";
+import star2 from "@/assets/backgrounds/WaveLinesDesktop2.svg";
 import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -18,20 +19,41 @@ const Contact = () => {
           />
 
           {/* Animated Overlay with Background Image */}
-          <motion.div
-            className="absolute inset-0 top-0 left-0"
+          <motion.img
+            src={star2.src}
+            alt="star"
             style={{
               clipPath: "polygon(0% 0, 100% 60%, 100% 100%, 0% 100%)",
-              backgroundImage: `url(${star2.src})`,
-              // backgroundSize: "cover",
-              backgroundPosition: "center",
-              // backgroundRepeat: "no-repeat",
-              opacity: 0.8, // Adjust transparency for overlay effect
             }}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 0.3, scale: 1 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            className="absolute top-36 right-0 w-[700px]"
+            animate={{
+              y: [0, -20, 0], // Up and down animation
+              opacity: 2,
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "linear",
+            }}
           />
+          <motion.img
+            src={star2.src}
+            alt="star"
+            style={{
+              clipPath: "polygon(0% 0, 100% 60%, 100% 100%, 0% 100%)",
+            }}
+            className="absolute -inset-10 -top-24  left-0 w-[900px]"
+            animate={{
+              y: [0, -20, 0], // Up and down animation
+              opacity: [0.8, 2, 0.8],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+
 
           {/* Content */}
           <div className="max-w-6xl mx-auto relative mt-32">
@@ -44,8 +66,9 @@ const Contact = () => {
                 for the future
               </p>
               <div>
-                <button className="bg-[#FF7F57] hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
+                <button className=" flex items-center bg-[#FF7F57] hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
                   Contact us
+                  <ChevronRight className="ml-2 p-1"/>
                 </button>
               </div>
             </div>

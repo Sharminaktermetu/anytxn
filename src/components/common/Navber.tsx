@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "@/assets/logo.svg";
 import logoBlue from "@/assets/logoblue.svg"; // Blue variant of the logo
+import { ChevronRight } from "lucide-react";
 
 const Navber = () => {
   const [isVisible, setIsVisible] = useState(true); // Initially visible
@@ -107,16 +108,17 @@ const Navber = () => {
           </ul>
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end ">
           {/* Button changes on scroll */}
           <button
-            className={`py-3 font-bold rounded px-8 text-lg transition-all duration-300 ${
+            className={`py-3 flex items-center justify-between font-bold rounded px-8 text-lg transition-all duration-300 ${
               isScrolledUp
                 ? "bg-[#ff6a3d] text-white"
                 : "border-2 border-white text-white hover:bg-[#ff6a3d]"
             }`}
           >
             Contact us
+            <ChevronRight className="ml-2"/>
           </button>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { NumberTicker } from "../ui/number-ticker";
 import TopTitle from "../common/TopTitle";
-import Brandlogo from "./Brandlogo";
+
 
 const TrustedBrand = () => {
   return (

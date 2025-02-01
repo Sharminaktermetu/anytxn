@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import lady from "@/assets/backgrounds/lady.avif";
 import star from "@/assets/backgrounds/WaveLinesDesktop2.svg"; // Example SVG
 import star2 from "@/assets/backgrounds/WaveLinesDesktop3.svg"; // Example SVG
+import { ChevronRight } from "lucide-react";
 
 const Banner = () => {
   const [hovered, setHovered] = useState(false);
@@ -56,12 +57,13 @@ const Banner = () => {
                 future of finance
               </h2>
               <p className="max-w-[600px] text-sm text-white/90 font-bold">
-                Reimagine financial services with AnyTech's open platform,
+                Reimagine financial services with AnyTech&apos;s open platform,
                 distributed <br />banking solution that powers transformation
               </p>
               <div>
-                <button className="bg-[#FF7F57] hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
+                <button className=" flex items-center bg-[#FF7F57] hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
                   Reach Out to Us
+                  <ChevronRight className="ml-2 p-1"/>
                 </button>
               </div>
             </div>
