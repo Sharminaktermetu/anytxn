@@ -10,10 +10,10 @@ const Banner = () => {
   const [hovered, setHovered] = useState(false);
   return (
     <div>
-      <section className="relative lg:h-[90vh] h-[50vh] overflow-hidden bg-white">
+      <section className="relative lg:h-screen h-[50vh] overflow-hidden bg-white">
         
         {/* Background with diagonal split */}
-        <div className=" absolute inset-0 bg-gradient-to-br from-[#1355b8] to-[#0057c1]">
+        <div className="bg-center absolute inset-0 bg-gradient-to-br from-[#1355b8] to-[#0057c1]">
           <div
             className="absolute inset-0"
             style={{
@@ -51,13 +51,13 @@ const Banner = () => {
           />
 
           {/* Banner content */}
-          <div className="max-w-6xl mx-auto relative my-14">
+          <div className="max-w-6xl mx-auto relative">
             <div className="flex flex-col justify-center space-y-8 py-20 items-center lg:items-start">
-              <h2 className="font-bold text-white lg:text-7xl text-4xl lg:leading-[1.5] tracking-[0.025em]">
+              <h2 className="font-bold text-white lg:text-6xl text-4xl lg:leading-[1.5] tracking-[0.025em]">
                 Embrace the <br />
                 future of finance
               </h2>
-              <h2 className="font-bold text-white lg:text-xl text-sm lg:leading-[1.5] tracking-[0.025em]">
+              <h2 className="font-semibold text-white lg:text-xl text-sm lg:leading-[1.5] tracking-[0.025em]">
               Reimagine financial  services with AnyTech&apos;s <br /> open platform,
               distributed banking solution <br />
                that powers transformation

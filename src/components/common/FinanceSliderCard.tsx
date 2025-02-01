@@ -31,7 +31,7 @@ const FinanceSliderCard = ({toptitle,heading,para1,para2,src}:FinanceSliderCard)
           </p>
          </div>
         </div>
-        <div className="aspect-video justify-center rounded-lg flex items-center">
+        <div className=" justify-center rounded-lg flex items-center">
             <Image src={src} alt="lady" width={500} height={500}  className='rounded-3xl'/>
         </div>
       </div>

@@ -19,11 +19,10 @@ const HomePage = () => {
       <Philosophy/>
       <Technology/>
       <TrustedBrand/>
-      
       <Brandlogo/>
       <Conatct/>
-      <Footer/>
-   
+      <Footer/> 
+  
     </div>
   )
 }

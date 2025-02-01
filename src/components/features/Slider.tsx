@@ -83,6 +83,7 @@ export default function Slider() {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        pagination={true}
         modules={[Autoplay, Navigation]}
         className="mySwiper  mt-28"
       >
