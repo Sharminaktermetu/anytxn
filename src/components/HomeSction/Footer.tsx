@@ -7,9 +7,9 @@ const Footer = () => {
       <footer className="footer max-w-6xl mx-auto text-neutral-content items-center p-4 py-14">
   <aside className="grid-flow-col items-center">
     <Image src={logo} alt='logo'/>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+    <p className='lg:flex hidden'>Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>
-  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-lg font-semibold text-[#00E9EA]">
+  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-lg font-semibold text-[#00E9EA] lg:flex hidden">
   <span className='border-r border-slate-300 pr-4'>Our Solutions</span>
   <span>AnyCacc</span>
   <span>AnyCacc</span>

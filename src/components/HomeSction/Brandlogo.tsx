@@ -18,7 +18,7 @@ import Image from 'next/image'
 const Brandlogo = () => {
   return (
     <div className='max-w-6xl mx-auto mt-20'>
-    <div className='grid  grid-cols-5 items-center gap-16'>
+    <div className='grid  grid-cols-5 items-center gap-16 p-6'>
     <Image src={brand1} alt=''/>
       <Image src={brand2} alt=''/>
       <Image src={brand3} alt=''/>

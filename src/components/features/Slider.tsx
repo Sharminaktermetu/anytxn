@@ -54,20 +54,23 @@ export default function Slider() {
   return (
     <div className={styles.sliderContainer}>
       {/* Custom Pagination Tabs */}
-      <div className={styles.customTabs}>
-        {financialSlides.map((slide, index) => (
-          <button
-            key={index}
-            className={`${styles.tabButton} ${activeIndex === index ? styles.activeTab : ''}`}
-            onClick={() => {
-              swiperRef.current?.slideTo(index);
-              setActiveIndex(index);
-            }}
-          >
-            {slide.toptitle}
-          </button>
-        ))}
-      </div>
+      <div className={`hidden lg:flex`}>
+ <div className={styles.customTabs}>
+ {financialSlides.map((slide, index) => (
+    <button
+      key={index}
+      className={`${styles.tabButton} ${activeIndex === index ? styles.activeTab : ''}`}
+      onClick={() => {
+        swiperRef.current?.slideTo(index);
+        setActiveIndex(index);
+      }}
+    >
+      {slide.toptitle}
+    </button>
+  ))}
+ </div>
+</div>
+
 
       <Swiper
         onSwiper={(swiper) => {

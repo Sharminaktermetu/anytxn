@@ -7,7 +7,7 @@ type PhilosophyCardProps = {
 }
 const PhilosophyCard = ({ icon, title, description }:PhilosophyCardProps) => {
     return (
-      <div className="card bg-[#f8fcff] w-96">
+      <div className="card bg-[#f8fcff] lg:w-96 w-48">
         <div className="card-body space-y-4">
           <Image src={icon} alt={title} className="size-12"/>
           <h2 className="card-title">{title}</h2>

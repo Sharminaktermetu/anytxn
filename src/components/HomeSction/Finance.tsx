@@ -13,12 +13,12 @@ const Finance = () => {
     <section className="">
     <div className="max-w-6xl mx-auto  py-20 ">
       <div className="grid lg:grid-cols-2 gap-6 items-center">
-        <div>
+        <div className='p-8 lg:p-0'>
           <h2 className="text-lg font-semibold tracking-wider text-blue-600">
             POWERING THE FUTURE OF FINANCE
           </h2>
          <div className="space-y-10">
-         <h1 className="mt-4 text-6xl font-semibold">
+         <h1 className="mt-4 lg:text-6xl font-semibold text-4xl">
             Uncovering new ways to delight customers
           </h1>
           <p>
