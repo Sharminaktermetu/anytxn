@@ -8,7 +8,7 @@ type TopTitleProps = {
 const TopTitle = ({title,describe}:TopTitleProps) => {
   return (
     <div className='w-full text-center space-y-6'>
-      <h2 className="text-[#1F80F0] text-xl font-bold">{title}
+      <h2 className="text-[#1F80F0] text-md font-bold tracking-[4px]">{title}
       </h2>
         <h1 className='text-5xl font-semibold'>{describe}</h1>
     </div>
