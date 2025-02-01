@@ -32,7 +32,9 @@ const Navber = () => {
     <div
       className={`fixed top-0 w-full transition-all duration-300  z-50 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } ${isScrolledUp ? "bg-white text-[#0057c1]" : "bg-transparent text-white"}`}
+      } ${
+        isScrolledUp ? "bg-white text-[#0057c1]" : "bg-transparent text-white"
+      }`}
     >
       <div className="navbar max-w-6xl mx-auto">
         <div className="navbar-start">
@@ -84,7 +86,7 @@ const Navber = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-[18px]">
             <li>
-            <details>
+              <details>
                 <summary>Solutions</summary>
                 <ul className="p-2">
                   <li>
@@ -97,18 +99,14 @@ const Navber = () => {
               </details>
             </li>
             <li>
-              
-                <summary>Services</summary>
-                
-             
+              <summary>Services</summary>
             </li>
             <li>
               <a>About us</a>
             </li>
           </ul>
         </div>
-
-        <div className="navbar-end ">
+        <div className="navbar-end hidden lg:flex">
           {/* Button changes on scroll */}
           <button
             className={`py-3 flex items-center justify-between font-bold rounded px-8 text-lg transition-all duration-300 ${
@@ -118,7 +116,7 @@ const Navber = () => {
             }`}
           >
             Contact us
-            <ChevronRight className="ml-2"/>
+            <ChevronRight className="ml-2" />
           </button>
         </div>
       </div>

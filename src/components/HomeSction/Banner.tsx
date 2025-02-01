@@ -10,15 +10,16 @@ const Banner = () => {
   const [hovered, setHovered] = useState(false);
   return (
     <div>
-      <section className="relative h-[87vh] overflow-hidden bg-white">
+      <section className="relative lg:h-[90vh] h-[50vh] overflow-hidden bg-white">
         
         {/* Background with diagonal split */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1355b8] to-[#0057c1]">
+        <div className=" absolute inset-0 bg-gradient-to-br from-[#1355b8] to-[#0057c1]">
           <div
             className="absolute inset-0"
             style={{
               clipPath: "polygon(80% 0, 100% 0, 100% 100%, 35% 100%)",
               backgroundImage: `url(${lady.src})`,
+              
             }}
           />
 
@@ -50,18 +51,20 @@ const Banner = () => {
           />
 
           {/* Banner content */}
-          <div className="max-w-6xl mx-auto relative mt-14">
-            <div className="flex flex-col justify-center space-y-8 py-20">
-              <h2 className="font-bold text-white lg:text-7xl lg:leading-[1.5] tracking-[0.025em]">
+          <div className="max-w-6xl mx-auto relative my-14">
+            <div className="flex flex-col justify-center space-y-8 py-20 items-center lg:items-start">
+              <h2 className="font-bold text-white lg:text-7xl text-4xl lg:leading-[1.5] tracking-[0.025em]">
                 Embrace the <br />
                 future of finance
               </h2>
-              <p className="max-w-[600px] text-sm text-white/90 font-bold">
-                Reimagine financial services with AnyTech&apos;s open platform,
-                distributed <br />banking solution that powers transformation
-              </p>
+              <h2 className="font-bold text-white lg:text-xl text-sm lg:leading-[1.5] tracking-[0.025em]">
+              Reimagine financial  services with AnyTech&apos;s <br /> open platform,
+              distributed banking solution <br />
+               that powers transformation
+              </h2>
+              
               <div>
-                <button className=" flex items-center bg-[#FF7F57] hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
+                <button className="flex lg:items-center  bg-[#FF7F57] hover:bg-[#ff6a3d] text-white py-3 font-bold rounded px-8 text-lg">
                   Reach Out to Us
                   <ChevronRight className="ml-2 p-1"/>
                 </button>

@@ -15,13 +15,14 @@ const HomePage = () => {
     <div>
       <Navber/>
       <Banner/>
+      {/* <Banner/>
       <Finance/>
       <Philosophy/>
       <Technology/>
       <TrustedBrand/>
       <Brandlogo/>
       <Conatct/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
